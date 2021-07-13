@@ -37,7 +37,11 @@
                                     </div>
                             </div>
                             <!--Can input recent searches here-->    
-                        </div>
+                            <ul class="recentSearches">
+
+                            </ul>
+
+                        </div >
                     </div>
                 </div>
 
@@ -48,12 +52,13 @@
                             <div class="card-body">
                                 <!-- 'city' name must by loaded in with js-->
                                 <h4 id="city" class="card-title">City</h4>
-                                <ul>
+                                <h4 id="currDate" class="card-title">Date</h4>
+                                <ul id="resultsData">
                                     <!-- Weather values updated with JS -->
                                     <li><img id='currentWeatherIcn'></img></li>
-                                    <li class='card-text' id='currTemp'>Temp:</li>
-                                    <li class='card-text' id='currHum'>Humidity:</li>
-                                    <li class='card-text' id='currWind'>Windspeed:</li>
+                                    <li class='card-text' id='currTemp'>Temp: </li>
+                                    <li class='card-text' id='currHum'>Humidity: </li>
+                                    <li class='card-text' id='currWind'>Windspeed: </li>
                                     <li class='card-text' id='currUVI'>UV Index:  <i class="far fa-thumbs-up"></i> <i class="far fa-thumbs-down"></i></li>
                                 </ul>
                             </div>
@@ -65,8 +70,16 @@
                     </div>
 
                     <!--5 day forecast-->
-                    <div id="forecast" class="row">
-
+                    <div class="row">
+                        <div class="col mt-4">
+                            <div class="card pb-5 fiveDayCard pl-5">
+                                <!-- Appends 5 day forecast-->
+                                <div class="row">
+                                    <div class="col fiveDayOne">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -74,11 +87,11 @@
         
 
 
-
+        <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="" async defer></script>
+        <script src="index.js" async defer></script>
     </body>
 </html>
